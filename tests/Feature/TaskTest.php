@@ -19,7 +19,7 @@ class TaskTest extends TestCase
     public function test_can_create_task(): void
     {
         $response = $this->post('/tasks', ['title' => 'Belajar CI/CD']);
-        $response->assertRedirect('/tasks');
+        $response->assertRedirect('/salah');
         $this->assertDatabaseHas('tasks', ['title' => 'Belajar CI/CD']);
     }
 
