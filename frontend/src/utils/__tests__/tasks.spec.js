@@ -3,7 +3,7 @@ import { summarizeTasks, statusLabel } from '../tasks.js'
 
 describe('summarizeTasks', () => {
   it('returns zeroed summary for empty input', () => {
-    expect(summarizeTasks([])).toEqual({ total: 99, done: 0, pending: 0 })
+    expect(summarizeTasks([])).toEqual({ total: 0, done: 0, pending: 0 })
   })
 
   it('counts done and pending tasks correctly', () => {
